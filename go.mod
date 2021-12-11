@@ -164,3 +164,10 @@ require (
 	sigs.k8s.io/kustomize/kyaml v0.13.6 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
 )
+
+replace (
+	k8s.io/api => ../kubernetes/staging/src/k8s.io/api
+	k8s.io/apimachinery => ../kubernetes/staging/src/k8s.io/apimachinery
+	k8s.io/cli-runtime => ../kubernetes/staging/src/k8s.io/cli-runtime
+	k8s.io/client-go => ../kubernetes/staging/src/k8s.io/client-go
+)
